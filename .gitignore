@@ -1,0 +1,60 @@
+# Dependencies and local env
+node_modules/
+.env
+.venv/
+.expo/
+
+# Git / editor / OS noise
+.git/
+.claude/
+.DS_Store
+*.log
+__pycache__/
+
+# iOS generated artifacts
+ios/Pods/
+ios/build/
+ios/**/xcuserdata/
+ios/**/*.xcuserstate
+
+# Temporary/runtime PID files
+scripts/*.pid
+scripts/kokoro_models/
+
+# Large local-only model/data artifacts
+models/
+captures/
+report_assets/
+assets/report_figures_v3/
+OK/
+
+# Legacy/old snapshot repo folder
+From_concept_to_market/
+
+# Reports, docs, slides, generated outputs
+*.pdf
+*.docx
+*.pptx
+*.tex
+report_*.md
+report_*.tex
+report_*.pdf
+pitch.txt
+raison.pdf
+raison.pptx
+
+# Local media exports not needed to run app
+*.mp4
+*.jpeg
+*.jpg
+image.png
+template.png
+Mon_Compte.png
+
+# Python utility scripts and generated docs not required for app runtime
+build_results_doc.py
+generate_pptx.py
+generate_raison_assets.py
+make_pptx.py
+render_code.py
+donnees_db_reelles.json

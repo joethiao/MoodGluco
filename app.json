@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "MoodGluco",
+    "slug": "moodgluco",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#1B9AAA"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSSpeechRecognitionUsageDescription": "Allow MoodGluco to transcribe your voice.",
+        "NSMicrophoneUsageDescription": "Allow MoodGluco to use your microphone for voice input.",
+        "NSCameraUsageDescription": "Allow MoodGluco to use your camera so the avatar can see your facial expression and adapt to your mood.",
+        "NSPhotoLibraryUsageDescription": "Allow MoodGluco to access your photos so you can pick a face photo for analysis."
+      },
+      "bundleIdentifier": "com.anonymous.moodgluco"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#1B9AAA"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
+    },
+    "plugins": [
+      "expo-audio",
+      "expo-notifications",
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Allow MoodGluco to use your camera so the avatar can analyze your facial expression.",
+          "photosPermission": "Allow MoodGluco to access your photos for face analysis."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow MoodGluco to use your camera for video calls with your avatar."
+        }
+      ]
+    ]
+  }
+}
